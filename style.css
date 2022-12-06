@@ -1,0 +1,132 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Syncopate:wght@400;700&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body, html, h2 {
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  overflow: hidden;
+  background-color: #5785AB;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: #B8D0E3;
+  text-align: center;
+  padding: 16px;
+  text-decoration: none;
+}
+
+.subnav {
+  float: left;
+  overflow: hidden;
+}
+
+.subnav .subnavbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: #B8D0E3;
+  padding: 16px;
+  background-color: inherit;
+  font-family: inherit;
+}
+
+.navbar a:hover, .subnav:hover .subnavbtn {
+  background-color: #71ADDE;
+}
+
+.subnav-content {
+  display: none;
+  left: 0;
+  background-color: #71ADDE;
+  width: 100%;
+}
+
+.subnav-content a {
+  float: left;
+  color: #B8D0E3;
+  text-decoration: none;
+}
+
+.subnav-content a:hover {
+  background-color: #82C6FF;
+  color: #4C565E;
+}
+
+.swiper {
+  text-align: center;
+  width: 36vw;
+  height: 42vh;
+}
+
+.swiper-button-prev {
+  opacity: 30%;
+}
+
+.swiper-button-next {
+  opacity: 30%;
+}
+
+.images {
+  height: 42vh;
+  width: inherit;
+}
+
+.mainContainer {
+  display: flex;
+  flex-direction: column;
+  margin-top: 7vh;
+  margin-bottom: 7vh;
+  padding-left: 18vw;
+  padding-right: 18vw;
+}
+
+.pageHeading {
+  display: flex;
+  flex-direction: column;
+  padding-top: 7vh;
+  padding-left: 1vw;
+  padding-right: 1vw;
+  padding-bottom: 1.5vh;
+  background-image: url(https://cdn.kqed.org/wp-content/uploads/sites/2/2016/06/SnowWhite1920.gif);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+h1 {
+  color: #ECF7FF;
+  font-family: 'Syncopate', sans-serif;
+  font-weight: 700;
+  text-align: center;
+  font-size: 1.5em;
+}
+
+h2 {
+  color: #ECF7FF;
+  font-family: 'Syncopate', sans-serif;
+  font-weight: 400;
+  text-align: center;
+  font-size: 1em;
+}
+
+.disclaimer {
+  font-size: 18px;
+}
+
+.subHeading {
+
+}
