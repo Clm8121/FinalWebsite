@@ -72,12 +72,14 @@ body, html, h2 {
 
 .subnav-content {
   display: none;
-  left: 0;
+  /* left: 0; */
+  overflow-y: auto;
+  width: 19vh;
+  align-items: center;
+  /* width: 100%; */
   background-color: #71ADDE;
-  width: 100%;
   position: absolute;
   z-index: 1;
-
 }
 
 .subnav-content a {
