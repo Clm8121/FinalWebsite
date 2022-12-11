@@ -1,5 +1,11 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Syncopate:wght@400;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap');
+
+:root {
+  --swiper-navigation-size: 1.75em;
+}
+
 
 * {
   box-sizing: border-box;
@@ -10,13 +16,22 @@ body, html, h2 {
   padding: 0;
 }
 
+#allMenuContainer {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  z-index: +99;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+}
+
 .navbar {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   overflow: hidden;
   background-color: #5785AB;
-  position: fixed;
   top: 0;
   width: 100%;
 }
@@ -43,10 +58,16 @@ body, html, h2 {
   padding: 16px;
   background-color: inherit;
   font-family: inherit;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
 }
 
 .navbar a:hover, .subnav:hover .subnavbtn {
   background-color: #71ADDE;
+}
+
+.subnav:hover .subnav-content {
+  display: block;
 }
 
 .subnav-content {
@@ -54,6 +75,9 @@ body, html, h2 {
   left: 0;
   background-color: #71ADDE;
   width: 100%;
+  position: absolute;
+  z-index: 1;
+
 }
 
 .subnav-content a {
@@ -69,8 +93,8 @@ body, html, h2 {
 
 .swiper {
   text-align: center;
-  width: 36vw;
-  height: 42vh;
+  width: 50vw;
+  height: 56vh;
 }
 
 .swiper-button-prev {
@@ -82,7 +106,11 @@ body, html, h2 {
 }
 
 .images {
-  height: 42vh;
+  height: 56vh;
+}
+
+.images2 {
+  height: inherit;
   width: inherit;
 }
 
@@ -93,6 +121,8 @@ body, html, h2 {
   margin-bottom: 7vh;
   padding-left: 18vw;
   padding-right: 18vw;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
 }
 
 .pageHeading {
@@ -104,7 +134,8 @@ body, html, h2 {
   padding-bottom: 1.5vh;
   background-image: url(https://cdn.kqed.org/wp-content/uploads/sites/2/2016/06/SnowWhite1920.gif);
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
+  background-position: center center;
 }
 
 h1 {
@@ -112,7 +143,9 @@ h1 {
   font-family: 'Syncopate', sans-serif;
   font-weight: 700;
   text-align: center;
-  font-size: 1.5em;
+  font-size: 3em;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
 }
 
 h2 {
@@ -120,13 +153,62 @@ h2 {
   font-family: 'Syncopate', sans-serif;
   font-weight: 400;
   text-align: center;
-  font-size: 1em;
+  font-size: 1.75em;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
 }
 
 .disclaimer {
-  font-size: 18px;
+  font-size: 1.375em;
+  padding-top: 4vh;
+  padding-bottom: 3vh;
+}
+
+.disclaimerThank {
+  text-align: center;
+  font-style: oblique;
+  font-weight: 600;
 }
 
 .subHeading {
+ font-size: 2em;
+}
+
+.subHeading2 {
+ font-size: 1.25em;
+}
+
+.content{
+  font-size: 1.5em
+}
+p.indent{
+  text-indent: 2em;;
+}
+
+.introduction {
+  font-size: 1.5em;
+}
+
+.peopleList {
+
+}
+
+.peopleHeading{
+  font-size: 1em;
+}
+
+.peopleNames{
+
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.subHeading2 a {
+  color: navy;
+}
+
+.footer {
 
 }
